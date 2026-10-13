@@ -1,0 +1,161 @@
+/* Задание 4: Bootstrap 4 + Mobile First. Отступы задаются Bootstrap-классами. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+  color: #1f2937;
+  background: #f6f8fb;
+}
+
+#site-header,
+#site-footer {
+  background: #dceaf7;
+  border-color: #b5ccdf;
+}
+
+#site-header {
+  border-bottom: 1px solid #b5ccdf;
+}
+
+#site-footer {
+  border-top: 1px solid #b5ccdf;
+}
+
+.site-logo {
+  display: block;
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+}
+
+h1 {
+  color: #163a59;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+#main-menu {
+  background: #174f7c;
+}
+
+#main-menu a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+#main-menu a:hover,
+#main-menu a:focus {
+  background: #0f3d63;
+  text-decoration: underline;
+}
+
+.content-section {
+  background: #fff;
+  border: 1px solid #dce3ea;
+  border-radius: 0.625rem;
+}
+
+h2 {
+  color: #174f7c;
+  font-size: 1.75rem;
+}
+
+a {
+  color: #1769aa;
+}
+
+.links-list {
+  overflow-wrap: anywhere;
+}
+
+.link-image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.map-image {
+  display: block;
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.data-table {
+  min-width: 650px;
+}
+
+.data-table th,
+.data-table td {
+  vertical-align: middle;
+}
+
+.data-table thead th {
+  color: #fff;
+  background: #267eb7;
+  border-color: #9eb4c7;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background: #edf6fc;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background: #dcecf7;
+}
+
+form {
+  width: 100%;
+  max-width: 620px;
+}
+
+.form-control {
+  color: #1f2937;
+  border-color: #9aa9b6;
+}
+
+select.form-control {
+  min-height: 220px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+fieldset {
+  border: 1px solid #9aa9b6;
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background: #174f7c;
+  border-color: #174f7c;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #0f3d63;
+  border-color: #0f3d63;
+}
+
+/* Mobile First: увеличение элементов только для экранов md и шире. */
+@media (min-width: 768px) {
+  .site-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+}
